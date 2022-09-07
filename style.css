@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: #0d192b;
+    min-height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.card{
+    background-color: #14253d;
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 18px;
+    border-radius: 17px;
+}
+
+.nft-img{
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.nft{
+    width: 100%;
+    display: block; 
+}
+
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #00fff780;
+    display: none;
+}
+
+.overlay img{
+    position: relative;
+    width: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nft-img:hover .overlay{
+    display: block;
+    cursor: pointer;
+}
+
+.text-center{
+    color: #ffffff;
+    padding-top: 15px;
+    font-weight: 600;
+}
+
+.text-center:hover{
+    color: #00fff7;
+    cursor: pointer;
+}
+
+.paragraph{
+    color: #8bacda;
+    padding: 15px 0px;
+    font-weight: 300;
+}
+
+.profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    line-height: none;
+}
+
+.ethereum{
+    color: #00fff7;
+}
+
+.clock{
+    color: #8bacda;
+}
+
+.avatar-creation{
+    border-top: 1px solid #2f415b;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.img-avatar{
+    width: 10%;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+}
+
+.avatar{
+    color: #8bacda;
+}
+
+.nameAvatar{
+    color: #ffffff;
+}
+
+.nameAvatar:hover{
+    color: #00fff7;
+    cursor: pointer;
+}
+
+@media (max-width: 375px){
+    .card{
+        max-width: 300px;
+    }
+}
